@@ -12,6 +12,18 @@ REGOLE
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+/*  Allora, iniziamo col dire che i principali datatype di Javascript, detto anche JS, ne sono 6: STRING, NUMBER, NULL, BOOLEAN, UNDEFINED e OBJECT. 
+    Questi datatype aiutano l'utente a verificare il tipo che è usato, 
+    in questo caso se ti dicessi "ora ti do un regalo"  questo sarebbe di tipo string perché contiene solo del testo, 
+    invece se ti chiedessi di farmi un'addizione quello sarebbe di tipo number, 
+    oppure, se ti chiedessi di descrivermi il tuo giocattolo preferito allora stiamo parlando di un oggetto (Object),
+    oppure se dovessimo parlare di vero o falso, l'esempio sarebbe, tu hai gli occhi verdi e hai 14 anni, tu mi risponderesti di no perché non hai 14 anni e non hai gli occhi verdi (False), oppure vero (True) se fosse il contrario,
+    per finire parliamo di null e undefined, di regola sono simili, ma per spiegartela pensala in questo modo, 
+    prendi di nuovo il tuo giocattolo preferito e mettilo nella tua cartella, in questo caso non succede nulla, ma se togliessi il tuo giocattolo dalla cartella in quel caso avresti un UNDEFINED, cioè niente, ti ritroveresti con la cartella vuota,
+    invece con null, per farti un esempio, prendi quella stessa cartella e invece di metterci il tuo giocattolo, ci metti un bigliettino con su scritto "questa cartella è vuota", in questo caso, a differenza di undefined, hai deciso di rimanere la cartella vuota di proposito. 
+
+
+*/
 
 /* ESERCIZIO 2
  Crea una variable chiamata "myName" e assegna ad essa il tuo nome, sotto forma di stringa.
@@ -58,7 +70,12 @@ console.log(myName);
 
 const lastName = "Borrelli";
 
-// lastName = "Borrello"; //Già in questo caso vscode non ci aiuta a trovare la variabile "lastName" perché è una variabile dentro const che non può essere sostituita, quindi quando andremo a controllarla nel console.log, ci darà l'errore
+lastName = "Sabatino";
+
+console.log(lastName);
+
+// lastName = "Borrello"; //Già in questo caso vscode non ci aiuta a trovare la variabile "lastName" perché è una variabile dentro const che non può essere sostituita,
+// quindi quando andremo a controllarla nel console.log, ci darà l'errore " Uncaught TypeError: Assignment to constant variable. "
 
 // console.log(lastName);
 
@@ -88,6 +105,10 @@ let name2 = "John";
 console.log(name1);
 console.log(name2);
 
-let diffName = name1 === name2;
+let diffName = name1 === name2; //In questo esempio ci viene mostrato che i due name sono differenti e quindi il risultato è FALSE ( come si può vedere tranquillamente nel .log(diffName))
 
 console.log(diffName);
+
+let diffNameLowerCase = name1 === name2.toLowerCase(); // in questo esempio invece avremo il risultato TRUE (.log(diffNameLowerCase)) perché entrambi i nomi sono identici e quindi l'uguaglianza è praticamente uguale.
+
+console.log(diffNameLowerCase);
